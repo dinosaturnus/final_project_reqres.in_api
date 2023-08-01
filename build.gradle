@@ -12,9 +12,7 @@ def selenideVersion = "6.16.1",
     slf4jVersion = "2.0.7",
     restAssuredVersion = "5.3.1",
     jsonSchemaValidatorVersion = "5.3.1",
-    allureRestAssuredVersion = "2.23.0",
-    allureSelenideVersion = "2.22.2",
-    javaFakerVersion = "1.0.2";
+    allureRestAssuredVersion = "2.23.0";
 
 allure {
     report {
@@ -46,11 +44,6 @@ dependencies {
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.rest-assured:json-schema-validator:$jsonSchemaValidatorVersion",
             "io.qameta.allure:allure-rest-assured:$allureRestAssuredVersion",
-            "io.qameta.allure:allure-selenide:$allureSelenideVersion"
-    )
-
-    implementation(
-            "com.github.javafaker:javafaker:$javaFakerVersion"
     )
 }
 tasks.withType(Test) {
