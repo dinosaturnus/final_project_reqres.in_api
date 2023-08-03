@@ -1,4 +1,4 @@
-# Дипломный проект по UI-тестированию интернет-магазина [Tasty Coffee](https://shop.tastycoffee.ru/)
+# Дипломный проект по API-тестированию cайта [Reqres.in](https://reqres.in/)
 
 ## Содержание:
 
