@@ -146,7 +146,7 @@ clean ${TASK}
 </p>
 
 <a id="jira"></a>
-## Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-842"> Jira </a>
+## Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-843"> Jira </a>
 <p align="center">
 <img src="img/screenshots/Jira.png">
 </p>
