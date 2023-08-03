@@ -4,6 +4,8 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
 import models.get_list_users.GetListUsersResponseModel;
@@ -21,6 +23,10 @@ public class GetListUsersTest extends TestBase {
     @Epic("Получение списка пользователей")
     @Story("Позитивный сценарий")
     @DisplayName("Получение списка пользователей на заданной странице")
+    @Tags({
+            @Tag("Smoke"),
+            @Tag ("Regress")
+    })
     @Test
     void successfulListUsers200() {
         RestAssured.filters(withCustomTemplates());

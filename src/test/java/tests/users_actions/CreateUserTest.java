@@ -4,6 +4,8 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import models.create_user.CreateUserRequestBodyModel;
 import models.create_user.CreateUserResponseBodyModel;
@@ -23,6 +25,10 @@ public class CreateUserTest extends TestBase {
     @Epic("Создание пользователя")
     @Story("Позитивный сценарий")
     @DisplayName("Успешное создание нового пользователя")
+    @Tags({
+            @Tag("Smoke"),
+            @Tag ("Regress")
+    })
     @Test
     void successfulCreateNewUser201() {
         RestAssured.filters(withCustomTemplates());

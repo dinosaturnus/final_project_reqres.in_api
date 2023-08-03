@@ -4,6 +4,8 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import models.update_user.UpdateUserRequestBodyModel;
 import models.update_user.UpdateUserResponseBodyModel;
@@ -22,6 +24,10 @@ public class UpdateUserTest extends TestBase {
     @Epic("Редактирование данных пользователя")
     @Story("Позитивный сценарий")
     @DisplayName("Успешное внесение изменений в данные пользователя")
+    @Tags({
+            @Tag("Smoke"),
+            @Tag ("Regress")
+    })
     @Test
     void successfulUpdateUser200() {
         RestAssured.filters(withCustomTemplates());

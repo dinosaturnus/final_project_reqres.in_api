@@ -5,6 +5,7 @@ import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import models.get_user.GetUserResponseModel;
 import tests.TestBase;
@@ -21,6 +22,10 @@ public class GetUserTests extends TestBase {
     @Epic("Получение информации о пользователе")
     @Story("Позитивный сценарий")
     @DisplayName("Получение информации о существующем пользователе")
+    @Tags({
+            @Tag("Smoke"),
+            @Tag ("Regress")
+    })
     @Test
     void successfulSingleUser200() {
         RestAssured.filters(withCustomTemplates());
@@ -47,6 +52,9 @@ public class GetUserTests extends TestBase {
     @Story("Негативные сценарии")
     @Tag("GET")
     @DisplayName("Получение информации о несуществующем пользователе")
+    @Tags({
+            @Tag ("Regress")
+    })
     @Test
     void unsuccessfulSingleUserDoesNotExist404() {
         RestAssured.filters(withCustomTemplates());

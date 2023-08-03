@@ -4,6 +4,8 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
 
@@ -20,6 +22,10 @@ public class DeleteUserTest extends TestBase {
     @Epic("Удаление пользователя")
     @Story("Позитивный сценарий")
     @DisplayName("Успешное удаление пользователя")
+    @Tags({
+            @Tag("Smoke"),
+            @Tag ("Regress")
+    })
     @Test
     void successfulDeleteUser204() {
         RestAssured.filters(withCustomTemplates());
