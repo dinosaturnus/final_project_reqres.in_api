@@ -1,7 +1,7 @@
 package tests.users_actions;
 
 import io.qameta.allure.Epic;
-import io.qameta.allure.Story;
+import io.qameta.allure.Feature;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -22,7 +22,7 @@ import static data.TestData.*;
 public class UpdateUserTest extends TestBase {
 
     @Epic("Пользователь")
-    @Story("Редактирование данных пользователя методом PUT")
+    @Feature("Редактирование данных пользователя методом PUT")
     @DisplayName("Передача валидного значения: работа")
     @Tags({
             @Tag("Smoke"),
