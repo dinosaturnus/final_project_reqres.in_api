@@ -1,6 +1,7 @@
 package tests.users_actions;
 
 import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
@@ -19,9 +20,9 @@ import static data.TestData.ID_2;
 
 public class DeleteUserTest extends TestBase {
 
-    @Epic("Удаление пользователя")
-    @Story("Позитивный сценарий")
-    @DisplayName("Успешное удаление пользователя")
+    @Epic("Пользователь")
+    @Feature("Удаление пользователя")
+    @DisplayName("Пользователь удален")
     @Tags({
             @Tag("Smoke"),
             @Tag ("Regress")

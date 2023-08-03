@@ -1,6 +1,7 @@
 package tests.users_actions;
 
 import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
@@ -22,9 +23,9 @@ import static data.TestData.userName;
 
 public class CreateUserTest extends TestBase {
 
-    @Epic("Создание пользователя")
-    @Story("Позитивный сценарий")
-    @DisplayName("Успешное создание нового пользователя")
+    @Epic("Пользователь")
+    @Feature("Создание пользователя")
+    @DisplayName("Создание нового пользователя с валидными данными")
     @Tags({
             @Tag("Smoke"),
             @Tag ("Regress")

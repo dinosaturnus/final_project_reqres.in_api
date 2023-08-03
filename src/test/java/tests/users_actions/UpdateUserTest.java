@@ -21,9 +21,9 @@ import static data.TestData.*;
 
 public class UpdateUserTest extends TestBase {
 
-    @Epic("Редактирование данных пользователя")
-    @Story("Позитивный сценарий")
-    @DisplayName("Успешное внесение изменений в данные пользователя")
+    @Epic("Пользователь")
+    @Story("Редактирование данных пользователя методом PUT")
+    @DisplayName("Передача валидного значения: работа")
     @Tags({
             @Tag("Smoke"),
             @Tag ("Regress")

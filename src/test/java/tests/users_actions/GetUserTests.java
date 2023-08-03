@@ -1,6 +1,7 @@
 package tests.users_actions;
 
 import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
@@ -19,8 +20,8 @@ import static data.TestData.*;
 
 public class GetUserTests extends TestBase {
 
-    @Epic("Получение информации о пользователе")
-    @Story("Позитивный сценарий")
+    @Epic("Пользователь")
+    @Feature("Получение данных пользователя")
     @DisplayName("Получение информации о существующем пользователе")
     @Tags({
             @Tag("Smoke"),
@@ -48,9 +49,8 @@ public class GetUserTests extends TestBase {
         });
     }
 
-    @Epic("Получение информации о пользователе")
-    @Story("Негативные сценарии")
-    @Tag("GET")
+    @Epic("Пользователь")
+    @Story("Получение данных пользователя")
     @DisplayName("Получение информации о несуществующем пользователе")
     @Tags({
             @Tag ("Regress")

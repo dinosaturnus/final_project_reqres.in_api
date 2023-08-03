@@ -1,6 +1,7 @@
 package tests.users_actions;
 
 import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
@@ -20,9 +21,9 @@ import static data.TestData.*;
 
 public class GetListUsersTest extends TestBase {
 
-    @Epic("Получение списка пользователей")
-    @Story("Позитивный сценарий")
-    @DisplayName("Получение списка пользователей на заданной странице")
+    @Epic("Пользователь")
+    @Feature("Получение списка пользователей")
+    @DisplayName("Получение списка на заданной странице и проверка данных одного из пользователей из списка")
     @Tags({
             @Tag("Smoke"),
             @Tag ("Regress")
