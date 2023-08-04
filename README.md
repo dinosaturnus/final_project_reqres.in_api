@@ -148,11 +148,11 @@ clean ${TASK}
 <a id="jira"></a>
 ## Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-843"> Jira </a>
 <p align="center">
-<img src="img/screenshots/Jira.png">
+<img src="img/screenshots/Jira.png" alt="jira" width="900">
 </p>
 
 <a id="telegram"></a>
 ## Уведомления в Telegram с использованием бота
 <p align="center">
-<img title="Telegram Notifications" src="img/screenshots/Telegram.png" alt="telegram" width="400">
+<img title="Telegram Notifications" src="img/screenshots/Telegram.png" alt="telegram" width="500">
 </p>
