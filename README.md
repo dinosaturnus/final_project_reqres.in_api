@@ -1,4 +1,8 @@
-# Дипломный проект по API-автотестированию cайта [Reqres.in](https://reqres.in/)
+# Дипломный проект по автоматизации тестирования API cайта [Reqres.in](https://reqres.in/)
+
+<div align="center">
+  <a href="https://reqres.in/"><img alt="Reqres.in" src="img/logo/reqresLogo.png"/></a>
+</div>
 
 ## Содержание:
 
