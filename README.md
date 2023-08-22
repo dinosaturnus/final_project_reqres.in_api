@@ -76,32 +76,16 @@ Allure-отчет включает в себя:
 <a id="console"></a>
 ##  Запуск тестов из терминала
 ### Локальный запуск тестов
-
+Для локального запуска тестов на вашей машине используйте следующую команду:
 ```bash
 gradle clean test
 ```
-
-### Удаленный запуск тестов
-
-```bash
-clean ${TASK}
--DbaseUrl=${BASE_URL}
--DbasePath=${BASE_PATH}
-```
-
-### Для запуска удаленных тестов необходимо передать значение:
-
-> `${TASK}` - таска для запуска тестов по определенному тегу.
->
-> `${BASE_URL}` - URL-адрес сайта - основная часть запроса.
->
-> `${BASE_PATH}` - постоянная часть эндпоинта запроса.
 
 <a id="jenkins"></a>
 ## Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/final_project_reqres.in_api/)
 Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
 <p align="center">
-  <img src="img/screenshots/JenkinsJob.png" alt="Jenkins" width="800">
+  <img src="img/screenshots/JenkinsJob.png" alt="Jenkins" width="900">
 </p>
 
 После выполнения сборки в блоке <code>История сборок</code> напротив номера сборки появится
@@ -148,11 +132,11 @@ clean ${TASK}
 <a id="jira"></a>
 ## Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-843"> Jira </a>
 <p align="center">
-<img src="img/screenshots/Jira.png">
+<img src="img/screenshots/Jira.png" alt="jira" width="900">
 </p>
 
 <a id="telegram"></a>
 ## Уведомления в Telegram с использованием бота
 <p align="center">
-<img title="Telegram Notifications" src="img/screenshots/Telegram.png" alt="telegram" width="900">
+<img title="Telegram Notifications" src="img/screenshots/Telegram.png" alt="telegram" width="450">
 </p>
