@@ -6,5 +6,5 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class UpdateUserResponseBodyModel {
-    String name, job;
+    private String name, job;
 }

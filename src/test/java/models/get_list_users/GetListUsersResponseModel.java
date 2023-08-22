@@ -7,17 +7,17 @@ import java.util.List;
 
 @Data
 public class GetListUsersResponseModel {
-    Integer page;
+    private Integer page;
 
     @JsonProperty("per_page")
-    Integer perPage;
+    private Integer perPage;
 
-    Integer total;
+    private Integer total;
 
     @JsonProperty("total_pages")
-    Integer totalPages;
+    private Integer totalPages;
 
-    List<UsersInfoDataObject> data;
+    private List<UsersInfoDataObject> data;
 
-    SupportDataObject support;
+    private SupportDataObject support;
 }

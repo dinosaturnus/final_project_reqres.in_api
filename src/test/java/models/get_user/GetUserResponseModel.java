@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class GetUserResponseModel {
-    UserInfoDataObject data;
+    private UserInfoDataObject data;
 
-    SupportDataObject support;
+    private SupportDataObject support;
 }

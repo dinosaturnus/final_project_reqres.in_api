@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class SupportDataObject {
-    String url;
+    private String url;
 
-    String text;
+    private String text;
 }
