@@ -11,7 +11,6 @@ import static io.restassured.filter.log.LogDetail.STATUS;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class GetUserSpecs {
-
     public static RequestSpecification getUserRequestSpec = with()
             .log().uri()
             .log().body();
@@ -29,5 +28,4 @@ public class GetUserSpecs {
             .expectStatusCode(404)
             .expectBody(Matchers.anything())
             .build();
-
 }

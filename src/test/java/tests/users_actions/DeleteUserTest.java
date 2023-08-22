@@ -16,18 +16,16 @@ import static specs.DeleteUserSpecs.deleteUserSuccessful204ResponseSpec;
 import static specs.DeleteUserSpecs.deleteUserRequestSpec;
 import static data.TestData.ID_2;
 
-
+@Epic("Пользователь")
+@Feature("Удаление пользователя")
 public class DeleteUserTest extends TestBase {
-
-    @Epic("Пользователь")
-    @Feature("Удаление пользователя")
-    @DisplayName("Пользователь удален")
+    @Test
     @Tags({
             @Tag("Smoke"),
-            @Tag ("Regress")
+            @Tag("Regress")
     })
-    @Test
-    void successfulDeleteUser204() {
+    @DisplayName("Пользователь удален")
+    void successfulDeleteUserTest() {
         RestAssured.filters(withCustomTemplates());
 
         step("Запрос на удаление пользователя", () ->

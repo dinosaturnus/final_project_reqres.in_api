@@ -18,17 +18,16 @@ import static specs.GetListUsersSpecs.getListUsersRequestSpec;
 import static specs.GetListUsersSpecs.getListUsersResponseSuccessful200Spec;
 import static data.TestData.*;
 
+@Epic("Пользователь")
+@Feature("Получение списка пользователей")
 public class GetListUsersTest extends TestBase {
-
-    @Epic("Пользователь")
-    @Feature("Получение списка пользователей")
-    @DisplayName("Получение списка на заданной странице и проверка данных одного из пользователей из списка")
+    @Test
     @Tags({
             @Tag("Smoke"),
-            @Tag ("Regress")
+            @Tag("Regress")
     })
-    @Test
-    void successfulListUsers200() {
+    @DisplayName("Получение списка на заданной странице и проверка данных одного из пользователей из списка")
+    void successfulListUsersTest() {
         RestAssured.filters(withCustomTemplates());
 
         GetListUsersResponseModel getListUsersResponseModel = step("Запрос на получение списка пользователей", () ->

@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 public class UsersInfoDataObject {
-
     Integer id;
 
     String email;

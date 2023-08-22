@@ -20,17 +20,16 @@ import static specs.CreateUserSpecs.*;
 import static data.TestData.userJob;
 import static data.TestData.userName;
 
+@Epic("Пользователь")
+@Feature("Создание пользователя")
 public class CreateUserTest extends TestBase {
-
-    @Epic("Пользователь")
-    @Feature("Создание пользователя")
-    @DisplayName("Создание нового пользователя с валидными данными")
+    @Test
     @Tags({
             @Tag("Smoke"),
-            @Tag ("Regress")
+            @Tag("Regress")
     })
-    @Test
-    void successfulCreateNewUser201() {
+    @DisplayName("Создание нового пользователя с валидными данными")
+    void successfulCreateNewUserTest() {
         RestAssured.filters(withCustomTemplates());
 
         CreateUserRequestBodyModel requestBody = new CreateUserRequestBodyModel();
@@ -53,5 +52,4 @@ public class CreateUserTest extends TestBase {
             assertEquals(userJob, createUserResponseBodyModel.getJob());
         });
     }
-
 }

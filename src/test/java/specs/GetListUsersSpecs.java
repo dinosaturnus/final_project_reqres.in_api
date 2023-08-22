@@ -10,7 +10,6 @@ import static io.restassured.filter.log.LogDetail.STATUS;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class GetListUsersSpecs {
-
     public static RequestSpecification getListUsersRequestSpec = with()
             .log().uri()
             .log().body();
@@ -21,6 +20,4 @@ public class GetListUsersSpecs {
             .expectStatusCode(200)
             .expectBody(matchesJsonSchemaInClasspath("schemes/getting-list-users-successful-get-200.json"))
             .build();
-
-
 }

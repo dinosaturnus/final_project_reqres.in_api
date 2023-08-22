@@ -11,7 +11,6 @@ import static io.restassured.http.ContentType.JSON;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class UpdateUserSpecs {
-
     public static RequestSpecification updateUserRequestSpec = with()
             .log().uri()
             .log().body()

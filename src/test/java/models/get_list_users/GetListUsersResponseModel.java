@@ -7,7 +7,6 @@ import java.util.List;
 
 @Data
 public class GetListUsersResponseModel {
-
     Integer page;
 
     @JsonProperty("per_page")

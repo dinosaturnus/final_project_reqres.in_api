@@ -10,7 +10,6 @@ import static io.restassured.filter.log.LogDetail.BODY;
 import static io.restassured.filter.log.LogDetail.STATUS;
 
 public class DeleteUserSpecs {
-
     public static RequestSpecification deleteUserRequestSpec = with()
             .log().uri()
             .log().body();

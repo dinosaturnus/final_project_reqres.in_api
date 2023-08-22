@@ -16,5 +16,4 @@ public class UserInfoDataObject {
     String lastName;
 
     String avatar;
-
 }

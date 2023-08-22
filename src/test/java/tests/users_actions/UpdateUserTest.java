@@ -19,17 +19,16 @@ import static specs.UpdateUserSpecs.updateUserRequestSpec;
 import static specs.UpdateUserSpecs.updateUserSuccessful200ResponseSpec;
 import static data.TestData.*;
 
+@Epic("Пользователь")
+@Feature("Редактирование данных пользователя методом PUT")
 public class UpdateUserTest extends TestBase {
-
-    @Epic("Пользователь")
-    @Feature("Редактирование данных пользователя методом PUT")
-    @DisplayName("Передача валидного значения: работа")
+    @Test
     @Tags({
             @Tag("Smoke"),
-            @Tag ("Regress")
+            @Tag("Regress")
     })
-    @Test
-    void successfulUpdateUser200() {
+    @DisplayName("Передача валидного значения: работа")
+    void successfulUpdateUserTest() {
         RestAssured.filters(withCustomTemplates());
 
         UpdateUserRequestBodyModel requestBody = new UpdateUserRequestBodyModel();

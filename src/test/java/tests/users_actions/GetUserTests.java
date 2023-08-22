@@ -17,17 +17,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static specs.GetUserSpecs.*;
 import static data.TestData.*;
 
+@Epic("Пользователь")
+@Feature("Получение данных пользователя")
 public class GetUserTests extends TestBase {
-
-    @Epic("Пользователь")
-    @Feature("Получение данных пользователя")
-    @DisplayName("Получение информации о существующем пользователе")
+    @Test
     @Tags({
             @Tag("Smoke"),
-            @Tag ("Regress")
+            @Tag("Regress")
     })
-    @Test
-    void successfulSingleUser200() {
+    @DisplayName("Получение информации о существующем пользователе")
+    void successfulSingleUserTest() {
         RestAssured.filters(withCustomTemplates());
 
         GetUserResponseModel getUserResponseModel = step("Запрос на получение информации о пользователе", () ->
@@ -48,14 +47,10 @@ public class GetUserTests extends TestBase {
         });
     }
 
-    @Epic("Пользователь")
-    @Feature("Получение данных пользователя")
-    @DisplayName("Получение информации о несуществующем пользователе")
-    @Tags({
-            @Tag ("Regress")
-    })
     @Test
-    void unsuccessfulSingleUserDoesNotExist404() {
+    @Tag("Regress")
+    @DisplayName("Получение информации о несуществующем пользователе")
+    void unsuccessfulSingleUserDoesNotExistTest() {
         RestAssured.filters(withCustomTemplates());
 
         step("Запрос на получение информации о пользователе", () ->

@@ -11,7 +11,9 @@ def junitVersion = "5.9.3",
     slf4jVersion = "2.0.7",
     restAssuredVersion = "5.3.1",
     jsonSchemaValidatorVersion = "5.3.1",
-    allureRestAssuredVersion = "2.23.0";
+    allureRestAssuredVersion = "2.23.0",
+    ownerVersion = "1.0.12";
+
 
 allure {
     report {
@@ -42,6 +44,7 @@ dependencies {
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.rest-assured:json-schema-validator:$jsonSchemaValidatorVersion",
             "io.qameta.allure:allure-rest-assured:$allureRestAssuredVersion",
+            "org.aeonbits.owner:owner:$ownerVersion"
     )
 }
 tasks.withType(Test) {

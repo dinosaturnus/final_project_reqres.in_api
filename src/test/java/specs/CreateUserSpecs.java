@@ -12,7 +12,6 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 
 
 public class CreateUserSpecs {
-
     public static RequestSpecification createUserRequestSpec = with()
             .log().uri()
             .log().body()
